@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { site } from "@/lib/site-config";
+import { asset } from "@/lib/paths";
 
 const links = [
   ["The Story", "#story"],
@@ -17,7 +18,7 @@ export function Navigation() {
   return (
     <nav className="top wrap" aria-label="Main">
       <a className="brand" href="#top">
-        <Image src={site.brand.logo} alt="" width={44} height={44} priority />
+        <Image src={asset(site.brand.logo)} alt="" width={44} height={44} priority />
         <span className="gilt">{site.brand.displayName}</span>
       </a>
       <button type="button" className="menu-toggle" aria-expanded={open} aria-controls="navlinks" onClick={() => setOpen((value) => !value)}>

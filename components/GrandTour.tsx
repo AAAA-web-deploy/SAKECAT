@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { reels } from "@/lib/site-config";
+import { asset } from "@/lib/paths";
 
 export function GrandTour() {
   const scroller = useRef<HTMLDivElement>(null);
@@ -29,7 +30,7 @@ export function GrandTour() {
         <div className="reel" ref={scroller}>
           {reels.map((reel) => (
             <figure className="shot" key={reel.image}>
-              <Image src={reel.image} alt={reel.alt} width={640} height={800} sizes="320px" />
+              <Image src={asset(reel.image)} alt={reel.alt} width={640} height={800} sizes="320px" />
               <figcaption><b>Reel {String(reel.number).padStart(2, "0")}</b><span>{reel.title}</span></figcaption>
             </figure>
           ))}

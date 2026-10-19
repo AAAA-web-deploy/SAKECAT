@@ -34,7 +34,7 @@ export function PosterWall() {
         <div className="wall">
           {posters.map((item, index) => (
             <button key={item.image} type="button" onClick={() => setCurrent(index)} aria-label={`Open poster: ${item.title}`}>
-              <Image src={item.image} alt={`Poster: ${item.title}`} width={800} height={800} sizes="(max-width: 600px) 46vw, (max-width: 980px) 40vw, 24vw" />
+              <Image src={asset(item.image)} alt={`Poster: ${item.title}`} width={800} height={800} sizes="(max-width: 600px) 46vw, (max-width: 980px) 40vw, 24vw" />
             </button>
           ))}
         </div>
@@ -43,7 +43,7 @@ export function PosterWall() {
         <div className="lightbox" role="dialog" aria-modal="true" aria-label={poster.title} onClick={() => setCurrent(null)}>
           <button type="button" className="lb-close" onClick={() => setCurrent(null)}>Close</button>
           <button type="button" className="lb-nav prev" aria-label="Previous poster" onClick={(event) => { event.stopPropagation(); setCurrent((index) => index === null ? null : (index - 1 + posters.length) % posters.length); }}>←</button>
-          <Image src={poster.image} alt={poster.title} width={1200} height={1200} sizes="90vw" onClick={(event) => event.stopPropagation()} />
+          <Image src={asset(poster.image)} alt={poster.title} width={1200} height={1200} sizes="90vw" onClick={(event) => event.stopPropagation()} />
           <button type="button" className="lb-nav next" aria-label="Next poster" onClick={(event) => { event.stopPropagation(); setCurrent((index) => index === null ? null : (index + 1) % posters.length); }}>→</button>
           <a className="btn prime lb-save" href={asset(poster.image)} download={`sakecat-poster-${current + 1}.webp`} onClick={(event) => event.stopPropagation()}>Save</a>
         </div>

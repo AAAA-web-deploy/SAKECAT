@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { contractIsValid, site } from "@/lib/site-config";
 import { shortCA } from "@/lib/helpers";
+import { asset } from "@/lib/paths";
 
 const rows = [
   ["Ticker", `$${site.brand.ticker}`],
@@ -33,7 +34,7 @@ export function Ledger() {
             <div className="approved">Approved<br />— The Boss</div>
           </div>
           <div className="ledger-photo">
-            <Image src={site.images.ledger} alt="SAKE CAT in a leather armchair beside stacks of cash, the Eiffel Tower in the window" width={880} height={1100} sizes="(max-width: 980px) 92vw, 440px" />
+            <Image src={asset(site.images.ledger)} alt="SAKE CAT in a leather armchair beside stacks of cash, the Eiffel Tower in the window" width={880} height={1100} sizes="(max-width: 980px) 92vw, 440px" />
           </div>
         </div>
         <p className="ledger-note">Supply, tax, mint, liquidity, and team figures stay unconfirmed until they can be read from the Ethereum contract. Nothing here is a promise.</p>

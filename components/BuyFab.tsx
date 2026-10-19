@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { site } from "@/lib/site-config";
+import { asset } from "@/lib/paths";
 import { safeExternalUrl } from "@/lib/helpers";
 import { toast } from "@/lib/ui-events";
 
@@ -9,7 +10,7 @@ export function BuyFab() {
   const href = safeExternalUrl(site.links.buy);
   const inner = (
     <>
-      <Image src={site.brand.logo} alt="" width={26} height={26} />
+      <Image src={asset(site.brand.logo)} alt="" width={26} height={26} />
       <span className="t">Buy</span> ${site.brand.ticker}
     </>
   );

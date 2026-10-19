@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { site } from "@/lib/site-config";
+import { asset } from "@/lib/paths";
 import { Navigation } from "./Navigation";
 import { CopyAddress } from "./CopyAddress";
 import { ExternalAction } from "./ExternalAction";
@@ -85,7 +86,7 @@ export function Hero() {
         </div>
         <div className="arch">
           <div className="frame">
-            <Image src={site.images.heroArch} alt="SAKE CAT in a pinstripe suit throwing dollar bills in a gilded palace hall" fill priority sizes="(max-width: 980px) 86vw, 440px" />
+            <Image src={asset(site.images.heroArch)} alt="SAKE CAT in a pinstripe suit throwing dollar bills in a gilded palace hall" fill priority sizes="(max-width: 980px) 86vw, 440px" />
           </div>
           <svg className="seal" viewBox="0 0 140 140" aria-hidden="true">
             <defs>

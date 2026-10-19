@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { site } from "@/lib/site-config";
+import { asset } from "@/lib/paths";
 
 export function Story() {
   const [dateLine, setDateLine] = useState("Evening Edition");
@@ -28,7 +29,7 @@ export function Story() {
           <p className="subhead">Witnesses describe a “suspiciously calm” orange tabby leaving a trail of hundred-dollar bills across Europe</p>
           <div className="news-grid">
             <figure>
-              <Image src={site.images.newspaper} alt="SAKE CAT walking down a cobblestone street throwing money" width={760} height={950} sizes="(max-width: 980px) 90vw, 38vw" />
+              <Image src={asset(site.images.newspaper)} alt="SAKE CAT walking down a cobblestone street throwing money" width={760} height={950} sizes="(max-width: 980px) 90vw, 38vw" />
               <figcaption>The suspect, photographed mid-stride. He did not stop for questions.</figcaption>
             </figure>
             <div className="col">
