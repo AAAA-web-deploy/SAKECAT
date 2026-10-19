@@ -1,0 +1,23 @@
+# Visual + functionality quality checks
+
+- [ ] `npm install` succeeds on development computer.
+- [ ] `npm run typecheck`, `npm run lint`, and `npm run build` pass.
+- [ ] First visit opens knock-three-times overlay; three knocks open site; skip works.
+- [ ] Reload in same tab skips door; new tab can show door.
+- [ ] Mobile nav opens/closes; no hidden offscreen menu links.
+- [ ] Every nav link scrolls to the correct section.
+- [ ] CA Copy is disabled while address is unset; after setting valid 0x... CA, clipboard contains exact 42-character address.
+- [ ] Hero displays user-supplied cat image and official replacement logo.
+- [ ] Paper/story renders with no clipped lines at 375, 768, 1280, 1600px.
+- [ ] Reel gallery shows all 10 user images and arrows/thumbs work.
+- [ ] Make It Rain works with mouse, touch and keyboard; 60-second countdown ends; 3 lives; rewards and penalties apply; Boss Mode lasts ~6s.
+- [ ] Local best score persists across reload; clipboard score button works.
+- [ ] All 8 posters render; tap opens modal; arrows, Escape, and Save work.
+- [ ] Ledger reports Ethereum mainnet / chain ID 1; no unverified promises.
+- [ ] Buy and Chart actions have no clickable external destinations until verified URLs supplied.
+- [ ] Wallet instructions use ETH mainnet and gas rather than SOL and Phantom/Solflare.
+- [ ] All media loads locally (no third-party dependency). Missing assets: zero.
+- [ ] Animation respects prefers-reduced-motion.
+- [ ] Legal disclaimer and token branding are approved by project owner.
+- [ ] Compare reference screenshot pairs at each viewport; adjust CSS until satisfactory.
+- [ ] Replace placeholder logo/favicon, set CA and approved links, verify supply/contract details, remove `robots: noindex` only for deliberate production launch.
