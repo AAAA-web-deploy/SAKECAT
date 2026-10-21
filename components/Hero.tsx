@@ -73,7 +73,7 @@ export function Hero() {
       <div className="wrap hero-grid">
         <div className="hero-copy">
           <div className="est">Est. {site.brand.foundingYear} · An Ethereum family business</div>
-          <h1 className="mega gilt"><span>SAKE</span><span>CAT</span></h1>
+          <h1 className="mega gilt"><span>CAT</span><span>FATHER</span></h1>
           <div className="tagline">{site.brand.tagline}</div>
           <p className="lead">One orange cat. One pinstripe suit. One cigar that never goes out. He walked into Ethereum throwing dollars like confetti, and he hasn&apos;t checked the chart once. He doesn&apos;t need to.</p>
           <CopyAddress />
@@ -86,7 +86,7 @@ export function Hero() {
         </div>
         <div className="arch">
           <div className="frame">
-            <Image src={asset(site.images.heroArch)} alt="SAKE CAT in a pinstripe suit throwing dollar bills in a gilded palace hall" fill priority sizes="(max-width: 980px) 86vw, 440px" />
+            <Image src={asset(site.images.heroArch)} alt="CatFather in a pinstripe suit throwing dollar bills in a gilded palace hall" fill priority sizes="(max-width: 980px) 86vw, 440px" />
           </div>
           <svg className="seal" viewBox="0 0 140 140" aria-hidden="true">
             <defs>
@@ -99,7 +99,7 @@ export function Hero() {
               </textPath>
             </text>
           </svg>
-          <div className="seal-core">$</div>
+          <div className="seal-core">CF</div>
         </div>
       </div>
     </header>

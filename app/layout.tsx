@@ -15,13 +15,25 @@ const body = Cormorant_Garamond({
 const typewriter = Special_Elite({ weight: "400", subsets: ["latin"], variable: "--font-type" });
 const label = Oswald({ weight: ["400", "500", "600"], subsets: ["latin"], variable: "--font-label" });
 
+const publicSite = "https://aaaa-web-deploy.github.io/SAKECAT";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(publicSite),
   title: `${site.brand.tokenName} · $${site.brand.ticker}`,
   description: `${site.brand.tokenName} ($${site.brand.ticker}) — the cigar-smoking dollar millionaire of Ethereum. ${site.brand.tagline}`,
   openGraph: {
     title: `${site.brand.tokenName} · $${site.brand.ticker}`,
     description: `${site.brand.tagline} The boss of Ethereum.`,
-    images: [{ url: site.images.heroArch }],
+    url: publicSite,
+    siteName: site.brand.tokenName,
+    type: "website",
+    images: [{ url: `${publicSite}/assets/social/catfather-og-1200x630.jpg`, width: 1200, height: 630, alt: `${site.brand.tokenName} · $${site.brand.ticker}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.brand.tokenName} · $${site.brand.ticker}`,
+    description: `${site.brand.tagline} The boss of Ethereum.`,
+    images: [`${publicSite}/assets/social/catfather-twitter-1200x600.jpg`],
   },
   robots: { index: false, follow: false },
 };

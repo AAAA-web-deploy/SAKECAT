@@ -233,9 +233,14 @@ export function MakeItRain() {
       ctx.strokeRect(14, 14, W - 28, H - 28);
       ctx.lineWidth = 1;
       ctx.fillStyle = "rgba(231,191,99,.10)";
-      ctx.font = '64px "Abril Fatface", Georgia';
       ctx.textAlign = "center";
-      ctx.fillText("SAKE CAT", W / 2, H / 2);
+      const mark = site.brand.displayName.toUpperCase();
+      let markSize = 64;
+      ctx.font = `${markSize}px "Abril Fatface", Georgia`;
+      const markWidth = ctx.measureText(mark).width;
+      if (markWidth > W - 96) markSize = Math.floor(markSize * ((W - 96) / markWidth));
+      ctx.font = `${markSize}px "Abril Fatface", Georgia`;
+      ctx.fillText(mark, W / 2, H / 2);
       ctx.font = '18px "Limelight", Georgia';
       ctx.fillText("THE BACK ROOM", W / 2, H / 2 + 32);
 
@@ -310,7 +315,7 @@ export function MakeItRain() {
   }
 
   async function copyScore() {
-    const text = `I made ${money(runRef.current.bank)} in SAKE CAT's Make It Rain. Rank: ${rank(runRef.current.bank)}. Still calm. $${site.brand.ticker}`;
+    const text = `I made ${money(runRef.current.bank)} in ${site.brand.tokenName}'s Make It Rain. Rank: ${rank(runRef.current.bank)}. Still calm. $${site.brand.ticker}`;
     try {
       await navigator.clipboard.writeText(text);
       toast("Score copied. Post it in the channel.");

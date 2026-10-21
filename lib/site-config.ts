@@ -4,14 +4,14 @@
  */
 export const site = {
   brand: {
-    tokenName: "SAKE CAT",
-    displayName: "SAKE CAT",
-    ticker: "SAKE",
+    tokenName: "CatFather",
+    displayName: "CatFather",
+    ticker: "CATFATHER",
     tagline: "Too calm for this much money.",
     shortTagline: "Count later. Rule now.",
     foundingYear: "2026",
     /** Circular mark in the nav and buy button. Replace with your official logo file. */
-    logo: "/assets/hero/hero-cat.webp",
+    logo: "/assets/branding/catfather-logo-circle-512.png",
   },
   /**
    * The live reference uses the palace portrait in the arch, the street photograph
@@ -74,7 +74,7 @@ export const posters = [
   ["Built different", "poster-04.webp"],
   ["Watching the room", "poster-05.webp"],
   ["Still calm", "poster-06.webp"],
-  ["Night belongs to SAKE CAT", "poster-07.webp"],
+  ["Night belongs to CatFather", "poster-07.webp"],
   ["Rich in style. Built for attention.", "poster-08.webp"],
 ].map(([title, file], index) => ({
   id: index + 1,

@@ -29,11 +29,11 @@ export function Story() {
           <p className="subhead">Witnesses describe a “suspiciously calm” orange tabby leaving a trail of hundred-dollar bills across Europe</p>
           <div className="news-grid">
             <figure>
-              <Image src={asset(site.images.newspaper)} alt="SAKE CAT walking down a cobblestone street throwing money" width={760} height={950} sizes="(max-width: 980px) 90vw, 38vw" />
+              <Image src={asset(site.images.newspaper)} alt="CatFather walking down a cobblestone street throwing money" width={760} height={950} sizes="(max-width: 980px) 90vw, 38vw" />
               <figcaption>The suspect, photographed mid-stride. He did not stop for questions.</figcaption>
             </figure>
             <div className="col">
-              <p>Nobody remembers where SAKE CAT came from. One evening he was simply there, at the top of the palace stairs, in a brown pinstripe suit two sizes too generous and a fedora tilted exactly one degree too far.</p>
+              <p>Nobody remembers where CatFather came from. One evening he was simply there, at the top of the palace stairs, in a brown pinstripe suit two sizes too generous and a fedora tilted exactly one degree too far.</p>
               <p>By midnight he had tipped the doorman, the orchestra and a statue. By morning he had a private carriage on the Orient line and a corner table in every lounge from Paris to Monte Carlo.</p>
               <p>Asked how much he is worth, he exhaled a long ring of cigar smoke and said nothing. His accountant confirmed the figure is “still going up” and asked not to be named.</p>
             </div>

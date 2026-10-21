@@ -45,7 +45,7 @@ export function PosterWall() {
           <button type="button" className="lb-nav prev" aria-label="Previous poster" onClick={(event) => { event.stopPropagation(); setCurrent((index) => index === null ? null : (index - 1 + posters.length) % posters.length); }}>←</button>
           <Image src={asset(poster.image)} alt={poster.title} width={1200} height={1200} sizes="90vw" onClick={(event) => event.stopPropagation()} />
           <button type="button" className="lb-nav next" aria-label="Next poster" onClick={(event) => { event.stopPropagation(); setCurrent((index) => index === null ? null : (index + 1) % posters.length); }}>→</button>
-          <a className="btn prime lb-save" href={asset(poster.image)} download={`sakecat-poster-${current + 1}.webp`} onClick={(event) => event.stopPropagation()}>Save</a>
+          <a className="btn prime lb-save" href={asset(poster.image)} download={`catfather-poster-${current + 1}.webp`} onClick={(event) => event.stopPropagation()}>Save</a>
         </div>
       )}
     </section>

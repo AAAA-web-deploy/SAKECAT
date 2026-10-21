@@ -1,6 +1,6 @@
-# SAKE CAT — Ethereum website
+# CatFather — Ethereum website
 
-A Next.js 15 + React 19 + TypeScript + Tailwind CSS recreation of the public [SAKE CAT](https://sakecat.lol/) landing page, adapted for **Ethereum mainnet**. The interactions are written in this project. The illustrations in `public/assets` are the supplied artworks.
+A Next.js 15 + React 19 + TypeScript + Tailwind CSS site for **CatFather ($CATFATHER)** on Ethereum mainnet. The layout follows the public [SAKE CAT](https://sakecat.lol/) page. The interactions are written in this project. The illustrations in `public/assets` are the supplied artworks.
 
 ## Run it
 
